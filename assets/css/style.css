@@ -805,18 +805,24 @@ button:focus:not(:focus-visible) {
 	position: relative;
 	
 }
-.heading_s2 h1, .heading_s2 h2, .heading_s2 h3, .heading_s2 h4, .heading_s2 h5, .heading_s2 h6,
+.heading_s2 h1, .heading_s2 h3, .heading_s2 h4, .heading_s2 h5, .heading_s2 h6,
 .heading_s3 h1, .heading_s3 h2, .heading_s3 h3, .heading_s3 h4, .heading_s3 h5, .heading_s3 h6 {
 	font-weight: 700;
 	margin: 0;
 	text-transform: capitalize;
-	color: #fff;
+	color: #ffffff;
 }
 .heading_s2 h4{
 	margin-top: 12px;
 	font-family: 'Oswald';
 	font-weight: 600;
 	font-size: 34px;
+}
+.headings_s2 h2{
+	margin-top: 12px;
+	font-weight: 700;
+	font-size: 36px;
+	color: #000;
 }
 .text_in_about{
 	color: #867f7f;
@@ -852,6 +858,43 @@ button:focus:not(:focus-visible) {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.arrival_text{
+	position: absolute;
+	color: #000;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-left: 40%;
+	z-index: 999;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.shop_area_text{
+	position: absolute;
+	color: #ffffff;
+	margin-top: 88%;
+	margin-left: 30%;
+	z-index: 999;
+	font-family: 'Oswald';
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.arrivalais_text{
+	position: absolute;
+	color: #000;
+	z-index: 999;
+	margin-top: 5%;
+	margin-left: 60%;
+}
+.arrivalais_text h1{
+	font-family: 'Oswald';
+	color: #00A97F;
+}
+.arrivalais_text h5{
+	margin-left: 66%;
+}
+.arrivalais_text p{
+	margin-left: 25%;
 }
 .arrival_text{
 	position: absolute;
@@ -1077,9 +1120,8 @@ button:focus:not(:focus-visible) {
   02.START HEADER STYLE
 *===================================*/
 .navbar-brand {
-	padding: 10px 0;
 	vertical-align: top;
-	margin-left: 50px;
+	margin-left: 80px;
 	display:inline-block;
 }
 .dark_skin .logo_light, .dark_skin .logo_default,
@@ -1101,6 +1143,8 @@ button:focus:not(:focus-visible) {
 }
 .navbar {
 	padding: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+	
 }
 .header_wrap {
 	transition: all 0.5s ease 0s;
@@ -1200,6 +1244,9 @@ button:focus:not(:focus-visible) {
 }
 .light_skin .item_remove {
 	color: #fff !important;
+}
+.droph3{
+	margin-left: 17px;
 }
 .light_skin .mega-menu-col {
 	border-right: 1px solid #3f3f3f;
@@ -1507,12 +1554,14 @@ button:focus:not(:focus-visible) {
 	background-color: transparent;
 	box-shadow: none;
 }
+
 .mega-menu {
 	display: table;
 	padding: 15px 0;
 	width: 100%;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	margin-left: 30px;
 }
 .mega-menu ul {
 	-ms-flex-wrap: wrap;
@@ -1523,8 +1572,8 @@ button:focus:not(:focus-visible) {
 }
 .navbar .navbar-nav li.dropdown-mega-menu .dropdown-menu {
 	right: 0;
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 .mega-menu-col {
 	border-right: 1px solid #ddd;
@@ -1535,7 +1584,7 @@ button:focus:not(:focus-visible) {
 }
 .dropdown-menu li a i {
     font-size: 14px;
-    width: 20px;
+    width: 100px;
     display: inline-block;
 	vertical-align: middle;
 }
@@ -1573,6 +1622,11 @@ button:focus:not(:focus-visible) {
     text-indent: 33px;
     border-radius: 10px;
 }
+
+.d-lg-flex ul li{
+		margin-right: 0;
+	}
+
 /* search end */
 .cart_count, .login {
 	position: relative;
@@ -1772,6 +1826,16 @@ button:focus:not(:focus-visible) {
 .social_icons.social_style1 li a {
 	background-color: #fff;
 	color: #FF324D;
+}
+.newsletter_text{
+	position: absolute;
+	color: #000;
+	z-index: 999;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.newsletter_text img{
+	position: relative;
 }
 .social_icons.social_style1 li a:hover {
 	background-color: #FF324D;
@@ -2589,13 +2653,18 @@ input.text {
 	position: relative;
 	max-width: 600px;
 	width: 100%;
+	margin-right: 10%;
+}
+.form i{
+	margin-top: 3px;
+	font-size:19px;
 }
 .product_search_form input {
-	height: 38px;
+	height: auto;
 	padding-right: 60px !important;
 }
 .search_form_btn .form-control {
-	padding-right: 120px !important;
+	opacity: 0.1 !important;
 }
 .search_btn {
 	position: absolute;
@@ -4165,13 +4234,8 @@ footer .widget_title {
   14.START CLIENT LOGO STYLE
 *===================================*/
 .client_logo .cl_logo img {
-	opacity: 0.7;
-	width: 163px;
-	margin: 0 auto;
-	transition: all 0.5s ease-in-out;
-}
-.client_logo .cl_logo:hover img {
-	opacity: 1;
+	width: auto;
+	margin-top: 10px;
 }
 .client_logo.cl_logo_style1 .cl_logo img {
 	opacity: 1;
@@ -6636,6 +6700,18 @@ footer .widget_recent_post .post_img img {
 		transform:translateY(0)
 	}
 }
+.heading_tab_headers {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	justify-content: center;
+	-ms-flex-align: center;
+    align-items: center;
+	width: 100%;
+	position: relative;
+}
 .heading_tab_header {
 	padding-bottom: 15px;
 	border-bottom: 1px solid #ddd;
@@ -7336,3 +7412,12 @@ blockquote p:last-child {
 .input-group > .input-group-append > .btn {
 	height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+	.navbar-brand {
+		margin-left: 0px;
+		container:inherit;
+	}
+	
+  }
+  
