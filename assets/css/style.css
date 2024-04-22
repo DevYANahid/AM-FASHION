@@ -188,7 +188,8 @@ button:focus:not(:focus-visible) {
 }
 .btn-fill-out {
 	background-color: transparent;
-	border: 1px solid #FF324D;
+	border: 1px solid #2BB673;
+	;
 	color: #fff;
 	position: relative;
 	overflow: hidden;
@@ -201,7 +202,8 @@ button:focus:not(:focus-visible) {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #FF324D;
+	background-color: #2BB673;
+	;
 	z-index: -1;
 	transition: all 0.3s ease-in-out;
 	width: 51%;
@@ -215,7 +217,7 @@ button:focus:not(:focus-visible) {
 	width: 0;
 }
 .btn-fill-out:hover {
-	color: #FF324D !important;
+	color: #2BB673 !important;
 }
 .btn-fill-line {
 	background-color: transparent;
@@ -5412,7 +5414,7 @@ footer .widget_title {
 	left: 0;
 	right: 0;
 	background-color: #fff;
-	padding: 7px 15px;
+	padding: 7px 150px;
 	opacity: 0;
 	visibility: hidden;
 	transition: all .3s ease-in-out;
@@ -5575,6 +5577,11 @@ footer .widget_title {
 .switch_lable {
     float: left;
     margin-right: 10px;
+	color: #000000;
+}
+.switch_lable_color {
+    margin-right: 10px;
+	color: #000000;
 }
 .pr_detail .pr_switch_wrap {
     margin-bottom: 10px;
@@ -5582,9 +5589,21 @@ footer .widget_title {
 .product_size_switch span {
 	cursor: pointer;
 	text-transform: uppercase;
-	width: 32px;
+	width: 40px;
 	display: inline-block;
 	border: 2px solid #ddd;
+	text-align: center;
+	height: 32px;
+	line-height: 28px;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+.product_size_switch_color span {
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 70px;
+	display: inline-block;
+	border: 2px solid #000000;
 	text-align: center;
 	height: 32px;
 	line-height: 28px;
