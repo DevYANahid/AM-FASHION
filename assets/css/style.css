@@ -101,7 +101,7 @@ video {
 	width: 100%;
 }
 .section {
-	padding: 100px 0;
+	padding: 30px 0;
 	position:relative;
 }
 .section.small_pt,
@@ -2653,7 +2653,17 @@ input.text {
 	position: relative;
 	max-width: 600px;
 	width: 100%;
+	border: 1px solid #000;
+	border-radius: 10px;
 	margin-right: 10%;
+}
+.search_product {
+	position: relative;
+	max-width: 1500px;
+	width: 100%;
+	margin-bottom: 4%;
+	border: 1px solid #000;
+	border-radius: 10px;
 }
 .form i{
 	margin-top: 3px;
@@ -5177,17 +5187,18 @@ footer .widget_title {
 	z-index: 1;
 }
 .product_info {
-	padding: 15px;
+	margin-left: 15%;
 }
 .price {
-	color: #FF324D;
+	color: #0c0c0c;
 	font-weight: 600;
 }
 .product_price del {
 	font-size: 14px;
 	margin-right: 5px;
-	margin-left: 3px;
+	margin-left: 22px;
 }
+
 .product-price del {
 	margin-left: 5px;
 	color: #919191;
@@ -5744,14 +5755,14 @@ footer .widget_title {
 	height: 100%;
 }
 .filter_price .ui-slider .ui-slider-range {
-	background-color: #FF324D;
+	background-color: #1f1b1b;
 	border-radius: 0;
 }
 .filter_price .ui-slider .ui-slider-handle {
 	cursor: pointer;
 	background-color: #fff;
 	border-radius: 100%;
-	border: 0;
+	border: 3px solid #000;
 	height: 18px;
 	top: -8px;
 	width: 18px;
@@ -6218,8 +6229,9 @@ select option {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #ced4da;
-	padding: 8px 35px 8px 15px;
+	border: 1px solid #000;
+	padding: 8px 90px 8px 15px;
+	border-radius: 7px;
 	width: 100%;
 	height: 50px;
 }
