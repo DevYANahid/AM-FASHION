@@ -145,6 +145,33 @@ div.banner_large_pad {
 .large_divider {
 	height: 100px;
 }
+.user-box {
+	position: relative;
+	margin-bottom: 30px;
+  }
+  .password-toggle-icon {
+	position: absolute;
+	top: 73%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+  }
+  
+  .password-toggle-icon i {
+	font-size: 18px;
+	line-height: 1;
+	color: #333;
+	transition: color 0.3s ease-in-out;
+	margin-bottom: 0px;
+  }
+  
+  .password-toggle-icon i:hover {
+	color: #000;
+  }
+.form-group label{
+	color: #000000;
+}
+
 .padding_eight_all {
 	padding: 8%;
 }
@@ -195,8 +222,17 @@ button:focus:not(:focus-visible) {
 	overflow: hidden;
 	z-index: 1;
 }
-.btn-fill-out::before,
-.btn-fill-out::after {
+.btn-fill-outs {
+	background-color: transparent;
+	border: 1px solid #000000;
+	;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.btn-fill-outs::before,
+.btn-fill-outs::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -208,16 +244,55 @@ button:focus:not(:focus-visible) {
 	transition: all 0.3s ease-in-out;
 	width: 51%;
 }
-.btn-fill-out::after {
+.btn-fill-outs::after {
 	right: 0;
 	left: auto;
 }
-.btn-fill-out:hover:before,
-.btn-fill-out:hover:after {
+.btn-fill-outs:hover:before,
+.btn-fill-outs:hover:after {
 	width: 0;
 }
-.btn-fill-out:hover {
-	color: #2BB673 !important;
+.btn-fill-outs:hover {
+	color: #333 !important;
+}
+.btn-fill-outs::before,
+.btn-fill-outs::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #333;
+	;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+	width: 51%;
+}
+.btn-fill-outs::after {
+	right: 0;
+	left: auto;
+}
+.btn-fill-outs:hover:before,
+.btn-fill-outs:hover:after {
+	width: 0;
+}
+.btn-fill-outs:hover {
+	color: #333 !important;
+}
+.btn-fill-google {
+	background-color: transparent;
+	border: 1px solid #000000;
+	font-weight: 600;
+	color: #000000;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+
+.btn-fill-google:hover {
+	color: #333 !important;
 }
 .btn-fill-line {
 	background-color: transparent;
@@ -795,7 +870,12 @@ button:focus:not(:focus-visible) {
 
 /*Title Css*/
 .heading_s1 {
-	margin-bottom: 7px;
+	margin-bottom: 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading_ss1 {
+	margin-bottom: 15px;
+	text-align: center;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .heading_s1 h1, .heading_s1 h2, .heading_s1 h3, .heading_s1 h4, .heading_s1 h5, .heading_s1 h6 {
@@ -1436,6 +1516,9 @@ button:focus:not(:focus-visible) {
 .search_wrap form {
 	position: relative;
 	width: 100%;
+}
+.form-control{
+	border: 1px solid #000000;
 }
 .search_wrap .form-control:focus {
 	color: #fff;
@@ -4773,9 +4856,7 @@ footer .widget_title {
 /*===================================*
   20.START LOGIN REGISTER STYLE
 *===================================*/
-.login_wrap {
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+
 .login_register_wrap {
 	display: -ms-flexbox;
 	display: flex;
@@ -4785,6 +4866,7 @@ footer .widget_title {
 	align-items: center;
 	position: relative;
 }
+
 .login_footer {
 	margin-bottom: 20px;
 	margin-top: 5px;
@@ -4797,7 +4879,15 @@ footer .widget_title {
 	width: 100%;
 }
 .login_footer a {
-	color: #687188;
+	color: #ff0000;
+	font-weight: 500;
+}
+.login_footer a:hover {
+	color: #fd2525;
+}
+.chek-form a{
+	color: #029bc2;
+	font-weight: 600;
 }
 .different_login {
 	text-align: center;
@@ -4844,10 +4934,6 @@ footer .widget_title {
 	color: #fff;
 	background: #344e86;
 	border-color: #344e86;
-}
-.btn-google {
-	background: #d85040;
-	border-color: #d85040;
 }
 .btn-google:hover {
 	color: #fff;
@@ -5586,6 +5672,19 @@ footer .widget_title {
 .pr_detail .pr_switch_wrap {
     margin-bottom: 10px;
 }
+.product_size_switchs span {
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 34px;
+	display: inline-block;
+	border: 2px solid #ddd;
+	text-align: center;
+	height: 32px;
+	line-height: 28px;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
 .product_size_switch span {
 	cursor: pointer;
 	text-transform: uppercase;
