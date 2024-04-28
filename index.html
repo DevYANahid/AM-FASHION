@@ -56,13 +56,13 @@
 <body>
 
     <!-- LOADER -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="lds-ellipsis">
             <span></span>
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> -->
     <!-- END LOADER -->
     <!-- START HEADER -->
     <header class="header_wrap fixed-top header_with_topbar">
@@ -311,11 +311,109 @@
                         </div>
                     </div>
                     <ul class="navbar-nav attr-nav align-items-center"  id="navbarSupportedContent">
-                        <li class="dropdown cart_dropdown">
-                            <a class="nav-link cart_trigger" href="#"><i
-                                    class="linearicons-bag2"></i>
-                                    <span class="cart_count">2</span><span
-                                    class="amount"></a>
+                        <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-bs-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+                            <div class="cart_box dropdown-menu dropdown-menu-right">
+                                <ul class="cart_list" style="max-height: 600px !important">
+                                        <li>
+                                            <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                            <a href="#"><img src="assets/images/image 19.png" alt="cart_thumb2">Ornare sed consequat</a>
+                                            <span class="cart_quantity">Color: 
+                                            <span class="cart_amount">
+                                                <select name="" id="">
+                                                    <option value="Green">Green</option>
+                                                    <option value="Red">Red</option>
+                                                    <option value="Yellow">Yellow</option>
+                                                </select>
+                                            </span></span>
+                                            <span class="cart_quantity">Size: 
+                                                <span class="cart_amount">
+                                                    <select name="" id="">
+                                                        <option value="Green">L</option>
+                                                        <option value="Red">XL</option>
+                                                        <option value="Yellow">XXL</option>
+                                                    </select>
+                                                </span></span>
+                                            <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span class="price_symbole">$81.00</span></span></span>
+                                          
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                            <a href="#"><img src="assets/images/image 22.png" alt="cart_thumb2">Ornare sed consequat</a>
+                                            <span class="cart_quantity">Color: 
+                                            <span class="cart_amount">
+                                                <select name="" id="">
+                                                    <option value="Green">Green</option>
+                                                    <option value="Red">Red</option>
+                                                    <option value="Yellow">Yellow</option>
+                                                </select>
+                                            </span></span>
+                                            <span class="cart_quantity">Size: 
+                                                <span class="cart_amount">
+                                                    <select name="" id="">
+                                                        <option value="Green">L</option>
+                                                        <option value="Red">XL</option>
+                                                        <option value="Yellow">XXL</option>
+                                                    </select>
+                                                </span></span>
+                                            <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span class="price_symbole">$81.00</span></span></span>
+                                          
+                                        </li>
+                                        <li>
+                                            <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                            <a href="#"><img src="assets/images/image 8 (4).png" alt="cart_thumb2">Ornare sed consequat</a>
+                                            <span class="cart_quantity">Color: 
+                                            <span class="cart_amount">
+                                                <select name="" id="">
+                                                    <option value="Green">Green</option>
+                                                    <option value="Red">Red</option>
+                                                    <option value="Yellow">Yellow</option>
+                                                </select>
+                                            </span></span>
+                                            <span class="cart_quantity">Size: 
+                                                <span class="cart_amount">
+                                                    <select name="" id="">
+                                                        <option value="Green">L</option>
+                                                        <option value="Red">XL</option>
+                                                        <option value="Yellow">XXL</option>
+                                                    </select>
+                                                </span></span>
+                                            <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span class="price_symbole">$81.00</span></span></span>
+                                        </li>
+                                        <h5 class="p-2">You May Also LIKE</h5>
+                                        <div class="col-md-12 p-2">
+                                            <div id="carouselExample" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active ">
+                                                    <div class="col-12 row">
+                                                        <div class="col-4"><img src="/assets/images/image 8 (1).png" alt=""></div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (2).png" alt=""></div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (3).png" alt=""></div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <div class="col-12 row">
+                                                        <div class="col-4"><img src="/assets/images/image 8 (4).png" alt=""></div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (5).png" alt=""></div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (6).png" alt=""></div>
+                                                    </div>
+                                                  </div>                 
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                                                  <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="visually-hidden">Next</span>
+                                                </button>
+                                              </div>
+                                        </div>
+                                        <div class="cart_footer">
+                                            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
+                                            <p class="cart_buttons"><a href="#" class="btn btn-fill-line btn-radius view-cart">Checkout</a></p>
+                                        </div>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="#" class="nav-link"><i class="linearicons-user"></i><span class="log">Log
@@ -328,6 +426,7 @@
         </div>
     </header>
     <!-- END HEADER -->
+    
     <div class="mb-3"></div>
 
     <!-- START SECTION BANNER -->
@@ -359,7 +458,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="sale-banner mb-3 mb-md-4">
                         <a class="hover_effect1" href="#">
                             <div class="first_arrival">
@@ -369,53 +468,53 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="sale-banner mb-3 mb-md-4">
                         <a class="hover_effect1" href="#">
                             <div class="first_arrival">
                                 <p class="arrival_text">Womens Khurti</p>
                             </div>
-                            <img src="assets/images/image 19.png" alt="shop_banner_img8">
+                            <img class="arrival_img" src="assets/images/image 19.png" alt="shop_banner_img8">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="sale-banner mb-3 mb-md-4">
                         <a class="hover_effect1" href="#">
                             <div class="first_arrival">
                                 <p class="arrival_text">Womens Fashion</p>
                             </div>
-                            <img src="assets/images/image 13.png" alt="shop_banner_img9">
+                            <img class="arrival_img" src="assets/images/image 13.png" alt="shop_banner_img9">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div  class="col-md-4 col-sm-6 col-xs-6">
                     <div class="sale-banner mb-3 mb-md-4">
                         <a class="hover_effect1" href="#">
                             <div class="first_arrival">
                                 <p class="arrival_text">Kids T-shirt</p>
                             </div>
-                            <img src="assets/images/image 11.png" alt="shop_banner_img7">
+                            <img class="arrival_img" src="assets/images/image 11.png" alt="shop_banner_img7">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="sale-banner mb-3 mb-md-4">
                         <a class="hover_effect1" href="#">
                             <div class="first_arrival">
                                 <p class="arrival_text">Mens T-shirt</p>
                             </div>
-                            <img src="assets/images/Group 9148.png" alt="shop_banner_img8">
+                            <img class="arrival_img" src="assets/images/Group 9148.png" alt="shop_banner_img8">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div  class="col-md-4 col-sm-6 col-xs-6">
                     <div class="sale-banner mb-3 mb-md-4">
                         <a class="hover_effect1" href="#">
                             <div class="first_arrival">
                                 <p class="arrival_text">Kids Cloth</p>
                             </div>
-                            <img src="assets/images/image 14.png" alt="shop_banner_img9">
+                            <img class="arrival_img" src="assets/images/image 14.png" alt="shop_banner_img9">
                         </a>
                     </div>
                 </div>
@@ -427,12 +526,7 @@
     <!-- START SECTION SINGLE BANNER -->
     <div class="section pb-0 pt-md-0">
         <div class="custom-containers">
-            <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-5">
-                    <div class="text-center trading_img">
-                        <img src="assets//images/bannerFs.png" alt="tranding_img" />
-                    </div>
-                </div>
+            <div class="row align-items-center">
                 <div class="col-md-7">
                     <div class="medium_divider d-none d-md-block clearfix"></div>
                     <div class="trand_banner_text text-center text-md-start">
@@ -445,11 +539,14 @@
                             you confident. Apart from the fabric, design and fit, we go through strict quality control
                             parameters to give you what you truly deserve. The power of a good outfit is how it can
                             influence your perception of yourself.We focus on carefully selecting the best clothing that
-                            is comfortable, looks great, and makes you confident. Apart from the fabric, design and fit,
-                            we go through strict quality control parameters to give you what you truly deserve. The
-                            power of a good outfit is how it can influence your perception of yourself.</p>
+                            is comfortable, looks great, and makes you confident. Apart from the fabric, design and fit</p>
                     </div>
                     <div class="medium_divider clearfix"></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="text-center trading_img">
+                        <img src="assets//images/bannerFs.png" alt="tranding_img" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -474,16 +571,16 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active ">
                             <div class="col-12 row">
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (1).png" alt=""></div>
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (2).png" alt=""></div>
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (3).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (1).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (2).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (3).png" alt=""></div>
                             </div>
                           </div>
                           <div class="carousel-item">
                             <div class="col-12 row">
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (4).png" alt=""></div>
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (5).png" alt=""></div>
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (6).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (4).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (5).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (6).png" alt=""></div>
                             </div>
                           </div>                 
                         </div>
@@ -520,15 +617,15 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                               <div class="col-12 row">
-                                  <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (4).png" alt=""></div>
-                                  <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 123.png" alt=""></div>
-                                  <div class="col-4" style=" height: 55vh;"><img src="/assets/images/image 129.png" alt=""></div>
+                                  <div class="col-4"><img src="/assets/images/image 8 (4).png" alt=""></div>
+                                  <div class="col-4"><img src="/assets/images/image 123.png" alt=""></div>
+                                  <div class="col-4"><img src="/assets/images/image 129.png" alt=""></div>
                               </div>             
                           </div>
                           <div class="carousel-item  ">
                             <div class="col-12 row">
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (1).png" alt=""></div>
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (2).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (1).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (2).png" alt=""></div>
                                 <div class="col-4" style=" height: 55vh;"><img src="/assets/images/image 8 (3).png" alt=""></div>
                             </div>
                           </div>    
@@ -563,16 +660,16 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                               <div class="col-12 row">
-                                  <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (5).png" alt=""></div>
-                                  <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (6).png" alt=""></div>
-                                  <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (7).png" alt=""></div>
+                                  <div class="col-4"><img src="/assets/images/image 8 (5).png" alt=""></div>
+                                  <div class="col-4"><img src="/assets/images/image 8 (6).png" alt=""></div>
+                                  <div class="col-4"><img src="/assets/images/image 8 (7).png" alt=""></div>
                               </div>             
                           </div>
                           <div class="carousel-item  ">
                             <div class="col-12 row">
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (6).png" alt=""></div>
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (2).png" alt=""></div>
-                                <div class="col-4" style="height: 55vh;"><img src="/assets/images/image 8 (3).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (6).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (2).png" alt=""></div>
+                                <div class="col-4"><img src="/assets/images/image 8 (3).png" alt=""></div>
                             </div>
                           </div>    
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">

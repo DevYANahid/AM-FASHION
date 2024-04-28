@@ -292,11 +292,11 @@ button:focus:not(:focus-visible) {
 
 
 .btn-fill-google:hover {
-	color: #333 !important;
+	color: #00ff88 !important;
 }
 .btn-fill-line {
 	background-color: transparent;
-	border: 1px solid #333;
+	border: 1px solid #00ff88;
 	overflow: hidden;
 	position: relative;
 	color: #fff !important;
@@ -309,10 +309,11 @@ button:focus:not(:focus-visible) {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #333;
+	background-color: #2BB673;
+;
 	z-index: -1;
 	transition: all 0.3s ease-in-out;
-	width: 50%;
+	width: 90%;
 }
 .btn-fill-line::after {
 	right: 0;
@@ -1738,7 +1739,7 @@ button:focus:not(:focus-visible) {
 	margin-right: -10px;
 }
 .navbar-nav .dropdown-menu.cart_box {
-	width: 320px;
+	width: 420px;
 	position: absolute !important;
 	-webkit-transform: scale(0) !important;
 	transform: scale(0) !important;
@@ -1749,7 +1750,7 @@ button:focus:not(:focus-visible) {
 	padding: 0;
 	top: 100% !important;
 	left: auto !important;
-	right: 0;
+	right: -110px;
 }
 .navbar-nav .dropdown-menu.cart_box.show {
 	-webkit-transform: scale(1) !important;
@@ -1770,7 +1771,8 @@ button:focus:not(:focus-visible) {
 	background-color: #ffffff;
 	float: left;
 	margin-right: 10px;
-	max-width: 80px;
+	max-width: 100px;
+	height: 120px;
 }
 .cart_list a {
 	font-size: 14px;
@@ -7548,6 +7550,62 @@ blockquote p:last-child {
 		margin-left: 0px;
 		container:inherit;
 	}
+	.navbar-brand img{
+		width: 30px;
+	}
+	.navbar-toggler{
+		float: left;
+		margin: 6px 0 0 3px;	
+	}
+	.am-logo {
+		height: 4px; 
+		width: 28px;
+		top: 1px;
+		left: 52px;
+		font-weight: 700;
+		font-size: 22px;
+	}
 	
   }
   
+
+  @media only screen and (max-width: 991px) {
+    .log {
+        display: none !important; 
+    }
+	.navbar .navbar-nav.attr-nav li .nav-link.search_trigger, .navbar .navbar-nav.attr-nav li .nav-link.cart_trigger {
+        padding: 5px 11px !important;
+	}
+	.navbar .navbar-nav.attr-nav li .nav-link {
+        padding: 10px 12px !important;
+    }
+	.custom-container {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.custom-containers {
+		padding-right: 9px;
+		padding-left: 9px;
+	}
+	.trand_banner_text {
+		text-align: left !important;
+	}
+	.am_about {
+		font-size: 12px;
+		font-weight: 400;
+		color: #000;
+	}
+
+	.col-xs-6 {
+			flex: 0 0 auto;
+			width: 50%;
+		}
+		.arrival_text {
+			border-radius: 5px;
+			margin-left: 20%;
+		}
+		.arrival_img{
+			border-radius: 5%;
+			
+		}
+}
