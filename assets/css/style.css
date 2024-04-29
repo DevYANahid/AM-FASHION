@@ -213,10 +213,19 @@ button:focus:not(:focus-visible) {
 .btn.active:focus, .btn:active:focus {
 	box-shadow: none !important;
 }
+.btn-fill-outes {
+	background-color: transparent;
+	color: #fff;
+	margin-top: 15px;
+	background-color: #d31900;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
 .btn-fill-out {
 	background-color: transparent;
 	border: 1px solid #2BB673;
-	;
 	color: #fff;
 	position: relative;
 	overflow: hidden;
@@ -225,7 +234,6 @@ button:focus:not(:focus-visible) {
 .btn-fill-outs {
 	background-color: transparent;
 	border: 1px solid #000000;
-	;
 	color: #fff;
 	position: relative;
 	overflow: hidden;
@@ -991,6 +999,21 @@ button:focus:not(:focus-visible) {
 }
 .arrival_img{
 	position: relative;
+}
+.arrival_imgs{
+	position: absolute;
+}
+.price_button{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: absolute;
+	color: #000;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-left: 26%;
+	margin-top: 145%;
+	z-index: 999;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 .heading_s2.heading_light .sub_heading {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.01) 100%);
@@ -3271,6 +3294,12 @@ input.text {
 .sale_banner img {
 	width: 100%;
 }
+.hover_effect7 {
+	overflow: hidden;
+	position: relative;
+	display: block;
+}
+
 .hover_effect1 {
 	overflow: hidden;
 	position: relative;
@@ -7607,5 +7636,32 @@ blockquote p:last-child {
 		.arrival_img{
 			border-radius: 5%;
 			
+		}
+		.shop_container .col-6 {
+			max-width: 50% !important;
+		}
+		.product_price del {
+			font-size: 9px;
+			margin-right: 0px;
+			margin-left: 0px;
+		}
+		.product_title {
+			font-size: 11px !important;
+			margin-left: -11px !important;
+			margin-bottom: 2px !important;
+		}
+		.product_size_switchs span {
+			width: 22px;
+			height: 27px;
+			line-height: 21px;
+			font-size: 10px;
+			margin-bottom: 3px;
+			margin-left: 0px;
+		}
+		.custom_select>select{
+			display: none !important;
+		}
+		.sidebar{
+			display: none;
 		}
 }
