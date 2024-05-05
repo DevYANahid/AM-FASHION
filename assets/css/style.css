@@ -877,6 +877,11 @@ button:focus:not(:focus-visible) {
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+
+heading_s11>span>img{
+	background-color: #00A97F;
+}
+
 /*Title Css*/
 .heading_s1 {
 	margin-bottom: 15px;
@@ -1014,10 +1019,11 @@ button:focus:not(:focus-visible) {
 	border-radius: 5px;
 	margin-left: 50%;
 	margin-top: 50%;
-	transform: translate(-50px, 250px);
+	transform: translate(-50%, 890%);
 	z-index: 999;
 	padding-left: 2%;
 	padding-right: 2%;
+	
 }
 .heading_s2.heading_light .sub_heading {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.01) 100%);
@@ -6304,6 +6310,10 @@ label.label_info {
 	margin-top: 5px;
 	margin-bottom: 0;
 }
+.custome-radioo{
+	padding-top: 20px;
+	padding-left: 20px;
+}
 .payment_option .custome-radio:first-child .payment-text {
 	display: block;
 }
@@ -7648,11 +7658,7 @@ blockquote p:last-child {
 	.navbar-toggler{
 		margin: 3px 9px 0 3px;
 	}
-	.price_button {
-		margin-left: 20%;
-		margin-top: 0%;
-		transform: translate(-8px, 164px);
-	}
+	
 	.mobile_cart{
 		display: block !important;
 	}
@@ -7714,6 +7720,9 @@ blockquote p:last-child {
 		}
 		.custom_select>select{
 			display: none !important;
+		}
+		.cart_list{
+			height: 400px;
 		}
 		.sidebar{
 			display: none;
@@ -7789,4 +7798,51 @@ blockquote p:last-child {
 	.product_search_form {
 		max-width: 804px;
 	}
+}
+@media (max-width: 667px) and (min-width: 375px){
+	.price_button {
+		transform: translate(-50%, 110%) !important;
+		font-size: 7px !important;
+	}
+}
+@media (max-width: 1526px) and (min-width: 1326px){
+	.price_button {
+		transform: translate(-50%, 968%) !important;
+	}
+}
+@media only screen and (max-width: 1700px) {
+    .container {
+        max-width: 1350px !important;
+    }
+}
+@media (max-width: 1826px) and (min-width: 1526px){
+	.price_button {
+		transform: translate(-50%, 1150%) !important;
+	}
+}
+@media (max-width: 915px) and (min-width: 412px){
+	.price_button {
+		transform: translate(-50%, 1030%) !important;
+		font-size: 7px !important;
+	}
+}
+@media (max-width: 932px) and (min-width: 430px){
+	.price_button {
+		transform: translate(-50%, 1100%) !important;
+		font-size: 7px !important;
+	}
+}
+@media (max-width:740px) and (min-width: 360px ){
+	.price_button {
+		transform: translate(-50%, 860%) !important;
+		font-size: 7px !important;
+	}
+
+}
+@media (max-width:1024px) and (min-width: 708px ){
+	.price_button {
+		transform: translate(-50%, 1320%) !important;
+		font-size: 7px !important;
+	}
+	
 }

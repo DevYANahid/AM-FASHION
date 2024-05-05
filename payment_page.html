@@ -429,281 +429,208 @@
         </div>
     </header>
     <!-- END HEADER -->
-
     
-    <div class="main_content big_cart">
+    <!-- START MAIN CONTENT -->
+<div class="main_content">
 
-        <!-- START SECTION SHOP -->
-        <div class="section">
-            <div class="container">
-                <h1 >My Cart</h1>
-                <hr class="mb-3">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="table-responsive shop_cart_table">
-                            <table class="table ">
-                                <thead>
-                                    <tr >
-                                        <th class="product-thumbnail">&nbsp;</th>
-                                    </tr>
-                                </thead>
+    <!-- START SECTION SHOP -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="heading_s1">
+                        <h4>Payment Option</h4>
+                    </div>
+                    <form method="post">
+
+                        <div class="ship_detail">
+                            <div class="form-group mb-3">
+                            <div class="chek-form col-12 d-flex">         
+                                <div class="custome-radioo col-3 mb-4" style="border: 1px solid #272222;margin-right: 5px;">
+                                    <input class="form-check-input" required="" type="radio" name="payment_option" style="margin-top: 25px;" id="exampleRadios3" value="option3" checked="">
+                                    <label class="form-check-label" for="exampleRadios3">   <img src="./assets/images/Cash On Delivery.png" style="width: 90px; padding-top: 20px;" alt=""></label>
+                                </div>
+                                <div class="custome-radioo col-3 mb-4" style="border: 1px solid #272222; margin-right: 5px;">
+                                    <input class="form-check-input mt-4" required="" type="radio" name="payment_option" id="exampleRadios4" value="option3" checked="">
+                                    <label class="form-check-label" for="exampleRadios4">   <img src="./assets/images/BKash-Logo.wine.png" style="width: 90px;" alt=""></label>
+                                </div>
+                                <div class="custome-radioo col-3 mb-4" style="border: 1px solid #272222; margin-right: 5px;">
+                                    <input class="form-check-input mt-4" required="" type="radio" name="payment_option" id="exampleRadios5" value="option3" checked="">
+                                    <label class="form-check-label" for="exampleRadios5">   <img src="./assets/images/Nagad-Logo.wine.png" style="width: 90px;" alt=""></label>
+                                </div>
+                                <div class="custome-radioo col-3 mb-4" style="border: 1px solid #272222;margin-right: 5px; ">
+                                    <input class="form-check-input mt-4" required="" type="radio" name="payment_option" id="exampleRadios6" value="option3" checked="">
+                                    <label class="form-check-label" for="exampleRadios6">   <img src="./assets/images/Card (1).png" style="width: 90px;" alt=""></label>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        </div>
+                        <a href="#" type="submit" class="btn btn-fill-line btn-block">Continue To Payment</a>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="order_review">
+                        <div class="heading_s1">
+                            <h4>Order Summary</h4>
+                        </div>
+                        <hr>
+                        <div class="table-responsive order_table">
+                            <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td class="product-thumbnail"><a href="#"><img src="assets/images/image 22.png" alt="product1"></a></td>
-                                        <td class="product-name">
-                                            <span class="d-flex">Blue Dress For Woman <i class='fas fa-trash-alt del_icon'></i></span>
-                                            <div class="color">Color:  <span class="cart_amount">
-                                                <select name="" id="" class="mb-2">
-                                                    <option value="Green">Green</option>
-                                                    <option value="Red">Red</option>
-                                                    <option value="Yellow">Yellow</option>
-                                                </select>
-                                            </span></div>
-                                            <div class="color">Size:  <span class="cart_amount">
-                                                <select name="" id="" >
-                                                    <option value="L">L</option>
-                                                    <option value="XL">XL</option>
-                                                    <option value="XXL">XXL</option>
-                                                </select>
-                                            </span></div>
-                                            <div class="product-price" data-title="Price">
-                                                Unit Price : $45.00
-                                              <input type="button" value="-" class="minus">
-                                                    <input type="text" name="quantity" value="2" title="Qty" class="qty" size="4">
-                                                    <input type="button" value="+" class="plus">                         
-                                            </div>
-                                      </div>
-                                        </td>
+                                        <div class="d-flex">
+                                            <div><img src="/assets/images/image 22.png" style="width: 90px;"></div>
+                                            <div style="margin-top: 5%; padding-left: 20px;"> Mens Panjabi for Daily Use
+                                            <p>Color: <span class="m-1"><b>Green</b></span> <span >Size: <span class="m-1"><b>L</b></span></span>Price: <span class="m-1"><b>1 X ৳1299</b></span></p></div>
+                                        </div>  
                                     </tr>
                                     <tr>
-                                        <td class="product-thumbnail"><a href="#"><img src="assets/images/image 11.png" alt="product1"></a></td>
-                                        <td class="product-name">
-                                            <span class="d-flex">Blue Dress For Woman <i class='fas fa-trash-alt del_icon' class="del_icon"></i></span>
-                                            <div class="color">Color:  <span class="cart_amount">
-                                                <select name="" id="" class="mb-2">
-                                                    <option value="Green">Green</option>
-                                                    <option value="Red">Red</option>
-                                                    <option value="Yellow">Yellow</option>
-                                                </select>
-                                            </span></div>
-                                            <div class="color">Size:  <span class="cart_amount">
-                                                <select name="" id="" >
-                                                    <option value="L">L</option>
-                                                    <option value="XL">XL</option>
-                                                    <option value="XXL">XXL</option>
-                                                </select>
-                                            </span></div>
-                                            <div class="product-price" data-title="Price">
-                                                Unit Price : $45.00
-                                              <input type="button" value="-" class="minus">
-                                                    <input type="text" name="quantity" value="2" title="Qty" class="qty" size="4">
-                                                    <input type="button" value="+" class="plus">                         
-                                            </div>
-                                      </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="#"><img src="assets/images/image 10.png" alt="product1"></a></td>
-                                        <td class="product-name">
-                                            <span class="d-flex">Blue Dress For Woman <i class='fas fa-trash-alt del_icon' class="del_icon"></i></span>
-                                            <div class="color">Color:  <span class="cart_amount">
-                                                <select name="" id="" class="mb-2">
-                                                    <option value="Green">Green</option>
-                                                    <option value="Red">Red</option>
-                                                    <option value="Yellow">Yellow</option>
-                                                </select>
-                                            </span></div>
-                                            <div class="color">Size:  <span class="cart_amount">
-                                                <select name="" id="" >
-                                                    <option value="L">L</option>
-                                                    <option value="XL">XL</option>
-                                                    <option value="XXL">XXL</option>
-                                                </select>
-                                            </span></div>
-                                            <div class="product-price" data-title="Price">
-                                                Unit Price : $45.00
-                                              <input type="button" value="-" class="minus">
-                                                    <input type="text" name="quantity" value="2" title="Qty" class="qty" size="4">
-                                                    <input type="button" value="+" class="plus">                         
-                                            </div>
-                                      </div>
-                                        </td>
+                                        <div class="d-flex">
+                                            <div><img src="/assets/images/image 10.png" style="width: 90px;"></div>
+                                            <div style="margin-top: 5%; padding-left: 20px;"> Mens Panjabi for Daily Use
+                                            <p>Color: <span class="m-1"><b>Green</b></span> <span >Size: <span class="m-1"><b>L</b></span></span>Price: <span class="m-1"><b>1 X ৳1299</b></span></p></div>
+                                        </div>  
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td colspan="6" class="px-0">
-                                            <div class="row g-0 align-items-center">
-        
-                                                <div class="col-lg-4 col-md-6 mb-3 mb-md-0">
-                                                    <div class="coupon field_form input-group">
-                                                        <input type="text" value="" class="form-control form-control-sm" placeholder="Enter Coupon Code..">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-line-fill  btn-sm" type="submit">Apply Coupon</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
+                                        <th>SubTotal</th>
+                                        <td class="product-subtotal">৳ 349.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Discount</th>
+                                        <td>৳ 0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Shipping</th>
+                                        <td>Free Shipping</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td class="product-subtotal">৳ 349.00</td>
                                     </tr>
                                 </tfoot>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="medium_divider"></div>
-                        <div class="divider center_icon"><i class="ti-shopping-cart-full"></i></div>
-                        <div class="medium_divider"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="border p-3 p-md-4">
-                            <div class="heading_s1 mb-3">
-                                <h6>Cart Totals</h6>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="cart_total_label">Cart Subtotal</td>
-                                            <td class="cart_total_amount">$349.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cart_total_label">Shipping</td>
-                                            <td class="cart_total_amount">Free Shipping</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cart_total_label">Total</td>
-                                            <td class="cart_total_amount"><strong>$349.00</strong></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <a href="#" class="btn btn-fill-line">Proceed To CheckOut</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <!-- END SECTION SHOP -->
-        
     </div>
-  
-
-     <!-- START FOOTER -->
-     <footer class="footer_dark">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-1 col-md-6 col-sm-6">
-                        <div class="footer_logo">
-                            <a href="#"><img src="assets/images/Logo (1).png" alt="logo" /></a>
-                        </div>
+    <!-- END SECTION SHOP -->
+    
+ <!-- START FOOTER -->
+ <footer class="footer_dark">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-6 col-sm-6">
+                    <div class="footer_logo">
+                        <a href="#"><img src="assets/images/Logo (1).png" alt="logo" /></a>
                     </div>
-                    <div class="col-lg-5 col-md-6 col-sm-12">
-                        <div class="widget">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit debitis odit
-                                saepe error ex architecto, laborum laudantium nisi voluptates exercitationem ullam
-                                deserunt aliquid minus enim, reiciendis, adipisci et quidem. If you are going to use of
-                                Lorem Ipsum need to be sure there isn't hidden of text</p>
-                        </div>
-                        <div class="widget">
-                            <ul class="social_icons social_white">
-                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                                <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="widget">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit debitis odit
+                            saepe error ex architecto, laborum laudantium nisi voluptates exercitationem ullam
+                            deserunt aliquid minus enim, reiciendis, adipisci et quidem. If you are going to use of
+                            Lorem Ipsum need to be sure there isn't hidden of text</p>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="widget">
-                            <h6 class="widget_title">Useful Links</h6>
-                            <ul class="widget_links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Location</a></li>
-                                <li><a href="#">Affiliates</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                    <div class="widget">
+                        <ul class="social_icons social_white">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                            <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="widget">
-                            <h6 class="widget_title">Category</h6>
-                            <ul class="widget_links">
-                                <li><a href="#">Men</a></li>
-                                <li><a href="#">Woman</a></li>
-                                <li><a href="#">Kids</a></li>
-                                <li><a href="#">Best Saller</a></li>
-                                <li><a href="#">New Arrivals</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h6 class="widget_title">Useful Links</h6>
+                        <ul class="widget_links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="widget">
-                            <h6 class="widget_title">Contact Info</h6>
-                            <ul class="contact_info contact_info_light">
-                                <li>
-                                    <i class="ti-location-pin"></i>
-                                    <p>123 Street, Old Trafford, New South London , UK</p>
-                                </li>
-                                <li>
-                                    <i class="ti-email"></i>
-                                    <a href="mailto:info@sitename.com">info@sitename.com</a>
-                                </li>
-                                <li>
-                                    <i class="ti-mobile"></i>
-                                    <p>+ 457 789 789 65</p>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h6 class="widget_title">Category</h6>
+                        <ul class="widget_links">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Best Saller</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="widget">
+                        <h6 class="widget_title">Contact Info</h6>
+                        <ul class="contact_info contact_info_light">
+                            <li>
+                                <i class="ti-location-pin"></i>
+                                <p>123 Street, Old Trafford, New South London , UK</p>
+                            </li>
+                            <li>
+                                <i class="ti-email"></i>
+                                <a href="mailto:info@sitename.com">info@sitename.com</a>
+                            </li>
+                            <li>
+                                <i class="ti-mobile"></i>
+                                <p>+ 457 789 789 65</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom_footer border-top-tran">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="mb-md-0 text-center">Copyright © 2024 AM FASHION Limited. All Right Reserved</p>
-                    </div>
+    </div>
+    <div class="bottom_footer border-top-tran">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mb-md-0 text-center">Copyright © 2024 AM FASHION Limited. All Right Reserved</p>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- END FOOTER -->
-    <!-- Latest jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <!-- popper min js -->
-    <script src="assets/js/popper.min.js"></script>
-    <!-- Latest compiled and minified Bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- owl-carousel min js  -->
-    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
-    <!-- magnific-popup min js  -->
-    <script src="assets/js/magnific-popup.min.js"></script>
-    <!-- waypoints min js  -->
-    <script src="assets/js/waypoints.min.js"></script>
-    <!-- parallax js  -->
-    <script src="assets/js/parallax.js"></script>
-    <!-- countdown js  -->
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <!-- imagesloaded js -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <!-- isotope min js -->
-    <script src="assets/js/isotope.min.js"></script>
-    <!-- jquery.dd.min js -->
-    <script src="assets/js/jquery.dd.min.js"></script>
-    <!-- slick js -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- elevatezoom js -->
-    <script src="assets/js/jquery.elevatezoom.js"></script>
-    <!-- scripts js -->
-    <script src="assets/js/scripts.js"></script>
+    </div>
+</footer>
+<!-- END FOOTER -->
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<!-- popper min js -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup min js  -->
+<script src="assets/js/magnific-popup.min.js"></script>
+<!-- waypoints min js  -->
+<script src="assets/js/waypoints.min.js"></script>
+<!-- parallax js  -->
+<script src="assets/js/parallax.js"></script>
+<!-- countdown js  -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- imagesloaded js -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- isotope min js -->
+<script src="assets/js/isotope.min.js"></script>
+<!-- jquery.dd.min js -->
+<script src="assets/js/jquery.dd.min.js"></script>
+<!-- slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- elevatezoom js -->
+<script src="assets/js/jquery.elevatezoom.js"></script>
+<!-- scripts js -->
+<script src="assets/js/scripts.js"></script>
 
 </body>
