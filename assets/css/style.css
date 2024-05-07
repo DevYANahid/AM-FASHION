@@ -6869,8 +6869,8 @@ footer .widget_recent_post .post_img img {
 	transform: scale(1.1);
 }
 .nav-tabs li.nav-item a {
+	border: none;
 	background-color: transparent;
-	border: 0;
 	font-weight: 500;
 	text-align: center;
 	text-transform: capitalize;
@@ -6882,6 +6882,15 @@ footer .widget_recent_post .post_img img {
 .tab-style1 .nav-tabs,
 .tab-style2 .nav-tabs {
 	border-bottom: 0;
+}
+.card-body{
+	position: relative;
+}
+.card-icon img{
+	position: absolute;
+	transform: translate(403%, -44%) !important;
+	background-color: #fff;
+	padding: 5px;
 }
 .tab-style1 .nav-tabs li.nav-item a.active, .tab-style1 .nav-tabs li.nav-item a.active:hover,
 .tab-style2 .nav-tabs li.nav-item a.active, .tab-style2 .nav-tabs li.nav-item a.active:hover {
@@ -7577,7 +7586,7 @@ blockquote p:last-child {
 	color: #2b2f4c;
 }
 .dashboard_menu .nav-tabs li.nav-item a.active {
-	background-color: #FF324D;
+	background-color: #514b4b;
 	color: #fff;
 }
 .dashboard_menu .nav-tabs li.nav-item a i {
