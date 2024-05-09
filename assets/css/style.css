@@ -157,6 +157,31 @@ div.banner_large_pad {
 	transform: translateY(-50%);
 	cursor: pointer;
   }
+  .toggle-icon{
+	position: absolute;
+    top: 61%;
+    left: 46%;
+    right: 28px;
+    transform: translateY(-47%);
+    cursor: pointer;
+    color: black;
+  }
+  .password-toggle-icons {
+	position: absolute;
+    top: 60%;
+    right: 27px;
+    transform: translateY(-47%);
+    cursor: pointer;
+    color: black;
+}
+.toggle-icons {
+	position: absolute;
+    top: 24%;
+    right: 27px;
+    transform: translateY(-47%);
+    cursor: pointer;
+    color: black;
+}
   
   .password-toggle-icon i {
 	font-size: 18px;
