@@ -102,6 +102,10 @@ video {
 	width: 100%;
 }
 .section {
+	padding: 30px 0px;
+	position:relative;
+}
+.sectionus {
 	padding: 30px 80px;
 	position:relative;
 }
@@ -2818,6 +2822,14 @@ input.text {
 	border-radius: 10px;
 	margin-right: 10%;
 }
+.product_search_formse {
+	position: relative;
+	max-width: 600px;
+	width: 100%;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin-right: 10%;
+}
 .search_product {
 	position: relative;
 	max-width: 1500px;
@@ -4022,15 +4034,19 @@ h6.blog_title {
 .newsletter_form input:focus,
 .newsletter_form2 input,
 .newsletter_form2 input:focus {
-	border: 0;
+	border: 1px solid #423f3f;
+	
 }
 .newsletter_form input.form-control-sm {
 	height: 50px;
 	padding: 10px 140px 10px 20px;
 }
+.newsletter_form i{
+	
+}
 .newsletter_form button {
 	position: absolute;
-	right: 0px;
+	right: -45%;
 	top: 50%;
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
