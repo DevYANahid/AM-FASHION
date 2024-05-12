@@ -4771,7 +4771,7 @@ footer .widget_title {
 	margin: 0;
 }
 .accordion .card-header a {
-	padding: 15px 40px 15px 15px;
+	padding: 15px 40px 9px 15px;
 	display: block;
 	line-height: normal;
 }
@@ -4794,8 +4794,8 @@ footer .widget_title {
 	padding: 15px 0 10px 0;
 }
 .accordion.accordion_style1 .card-header a {
-	padding-left: 0;
-	padding-top: 0;
+	padding-left: 6px;
+	padding-top: 5px;
 	font-weight: 600;
 }
 .accordion_style1 .card-header a::after {
@@ -4805,7 +4805,7 @@ footer .widget_title {
 	font-weight: normal;
 	position: absolute;
 	right: 15px;
-	top: 0px;
+	top: 8px;
 }
 .accordion_style1 .card-header a[aria-expanded="false"]::after {
 	content: "\f217";
@@ -4878,6 +4878,9 @@ footer .widget_title {
 	position: absolute;
 	left: 20px;
 	top: 25px;
+}
+.collapsed{
+	border: 1px solid #d4b5b5;
 }
 .accordion_style4 .card-header a.collapsed::after {
 	content: "\f123";
