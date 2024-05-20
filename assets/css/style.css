@@ -3073,7 +3073,7 @@ input.text {
 	color: #fff;
 }
 .row{
-	--bs-gutter-x: 3.5rem;
+	--bs-gutter-x: 1.5rem;
 }
 .carousel .indicators_style1,
 .carousel .indicators_style2,
@@ -4257,13 +4257,13 @@ footer .widget_title {
 }
 .contact_info i + * {
 	overflow: hidden;
-	font-size: 14px;
+	font-size: 10px;
 	color: #687188;
-	line-height: 26px;
-	margin: 0;
-	vertical-align: middle;
-	max-width: 78%;
-	display: inline-block;
+	line-height: 10px;
+    margin: 0px;
+    vertical-align: middle;
+    max-width: 76%;
+    display: inline-block;
 }
 .contact_info_light li i {
 	border-color: #fff;
@@ -7812,6 +7812,10 @@ blockquote p:last-child {
 		gap: 0px;
 		opacity: 0px;
 
+	}
+	.product{
+		margin-left: 5px;
+        margin-right: 5px;
 	}
 }
   
