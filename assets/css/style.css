@@ -7761,6 +7761,57 @@ blockquote p:last-child {
 	}
 	
   }
+  @media only screen and (max-width: 575px) {
+    .banner_section:not(.full_screen), .banner_section:not(.full_screen) .carousel-item, .banner_section:not(.full_screen) .banner_content_wrap, .banner_section:not(.full_screen) .banner_content_wrap .carousel-item {
+        height: 161px !important;
+    }
+	.heading_tab_header{
+		padding: 0;
+	}
+	.heading_s2 h4 {
+		margin: 3px;
+		font-family: 'Oswald';
+		font-weight: 400;
+		font-size: 23px;
+	}
+	.row{
+		--bs-gutter-x:0px !important;
+	}
+	.sale-banner img {
+		width: 90%;
+		margin-left: 10px;
+	}
+	.col-4 {
+		width: 44%;
+		margin: 11px;
+	}
+	.arrivalais_text h5 {
+		margin-left: 1%;
+	}
+	.arrivalais_text p {
+		margin-left: 1%;
+	}
+	.arrivalais_text {
+		margin-top: 16%;
+		margin-left: 37%;
+	}
+	.shop_area_text {
+		margin-top: 77%;
+	}
+	.price_button {
+        transform: translate(-50%, 871%) !important;
+        font-size: 12px !important;
+	}
+	.arrivalais_img{
+		width: 390px !important;
+		height: 200px;
+		top: 4629.9px;
+		left: 12px;
+		gap: 0px;
+		opacity: 0px;
+
+	}
+}
   
 
   @media only screen and (max-width: 991px) {
@@ -7911,12 +7962,7 @@ blockquote p:last-child {
 		max-width: 804px;
 	}
 }
-@media (max-width: 667px) and (min-width: 375px){
-	.price_button {
-		transform: translate(-50%, 110%) !important;
-		font-size: 7px !important;
-	}
-}
+
 @media (max-width: 1526px) and (min-width: 1326px){
 	.price_button {
 		transform: translate(-50%, 968%) !important;
@@ -7943,13 +7989,6 @@ blockquote p:last-child {
 		transform: translate(-50%, 1100%) !important;
 		font-size: 7px !important;
 	}
-}
-@media (max-width:740px) and (min-width: 360px ){
-	.price_button {
-		transform: translate(-50%, 860%) !important;
-		font-size: 7px !important;
-	}
-
 }
 @media (max-width:1024px) and (min-width: 708px ){
 	.price_button {
