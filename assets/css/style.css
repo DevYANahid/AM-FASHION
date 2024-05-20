@@ -1047,12 +1047,12 @@ heading_s11>span>img{
 	color: #000;
 	background-color: #fff;
 	border-radius: 5px;
-	margin-left: 50%;
-	margin-top: 50%;
-	transform: translate(-50%, 890%);
 	z-index: 999;
 	padding-left: 2%;
 	padding-right: 2%;
+    margin-left: 42%;
+    margin-top: 42%;
+    transform: translate(-31%, 800%);
 	
 }
 .heading_s2.heading_light .sub_heading {
@@ -7782,8 +7782,14 @@ blockquote p:last-child {
 		margin-left: 10px;
 	}
 	.col-4 {
-		width: 44%;
+		width: 43%;
 		margin: 11px;
+	}
+	.price_button{
+		margin-left: 40%;
+        margin-top: 50%;
+        transform: translate(-36%, 682%) !important;
+		
 	}
 	.arrivalais_text h5 {
 		margin-left: 1%;
@@ -7797,10 +7803,6 @@ blockquote p:last-child {
 	}
 	.shop_area_text {
 		margin-top: 77%;
-	}
-	.price_button {
-        transform: translate(-50%, 871%) !important;
-        font-size: 12px !important;
 	}
 	.arrivalais_img{
 		width: 390px !important;
@@ -7963,37 +7965,5 @@ blockquote p:last-child {
 	}
 }
 
-@media (max-width: 1526px) and (min-width: 1326px){
-	.price_button {
-		transform: translate(-50%, 968%) !important;
-	}
-}
-@media only screen and (max-width: 1700px) {
-    .container {
-        max-width: 1350px !important;
-    }
-}
-@media (max-width: 1826px) and (min-width: 1526px){
-	.price_button {
-		transform: translate(-50%, 1150%) !important;
-	}
-}
-@media (max-width: 915px) and (min-width: 412px){
-	.price_button {
-		transform: translate(-50%, 1030%) !important;
-		font-size: 7px !important;
-	}
-}
-@media (max-width: 932px) and (min-width: 430px){
-	.price_button {
-		transform: translate(-50%, 1100%) !important;
-		font-size: 7px !important;
-	}
-}
-@media (max-width:1024px) and (min-width: 708px ){
-	.price_button {
-		transform: translate(-50%, 1320%) !important;
-		font-size: 7px !important;
-	}
-	
-}
+
+
