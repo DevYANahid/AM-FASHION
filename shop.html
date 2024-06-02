@@ -8,9 +8,9 @@
     <meta content="Anil z" name="author">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Shopwise is Powerful features and You Can Use The Perfect Build this Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods.">
+          content="Shopwise is Powerful features and You Can Use The Perfect Build this Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods.">
     <meta name="keywords"
-        content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
+          content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
     <!-- SITE TITLE -->
     <title>AM FASHION</title>
@@ -20,73 +20,310 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Latest Bootstrap min CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<!-- Favicon Icon -->
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
-<!-- Animation CSS -->
-<link rel="stylesheet" href="assets/css/animate.css">	
-<!-- Latest Bootstrap min CSS -->
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
-<!-- Icon Font CSS -->
-<link rel="stylesheet" href="assets/css/all.min.css">
-<link rel="stylesheet" href="assets/css/ionicons.min.css">
-<link rel="stylesheet" href="assets/css/themify-icons.css">
-<link rel="stylesheet" href="assets/css/linearicons.css">
-<link rel="stylesheet" href="assets/css/flaticon.css">
-<link rel="stylesheet" href="assets/css/simple-line-icons.css">
-<!--- owl carousel CSS-->
-<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
-<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
-<!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
-<!-- jquery-ui CSS -->
-<link rel="stylesheet" href="assets/css/jquery-ui.css">
-<!-- Slick CSS -->
-<link rel="stylesheet" href="assets/css/slick.css">
-<link rel="stylesheet" href="assets/css/slick-theme.css">
-<!-- Style CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"-->
+    <!--          rel="stylesheet">-->
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!--- owl carousel CSS-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- jquery-ui CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        .filter_sidebar {
+            width: 100%;
+            height: 90vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            margin: 0 auto;
+        }
+
+        .body_content > div {
+            padding: 10px;
+        }
+
+        .filter_mo_btn {
+            border: 1px solid #808080;
+            margin: 15px 0 2px 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .filter_mo_btn.mo_btn_l {
+            border-left: none;
+            border-right: none;
+        }
+
+        .filter_mo_btn.mo_btn_r {
+            border-right: none;
+        }
+
+        .mobo_enable {
+            position: relative;
+        }
+
+        /*mobile bottom nav*/
+        .bottom_nav {
+            width: 99vw;
+            position: fixed;
+            bottom: 1px;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            z-index: 9999;
+            box-sizing: border-box;
+            box-shadow: -1px -4px 5px -1px rgba(0, 0, 0, 0.45);
+            -webkit-box-shadow: -1px -4px 5px -1px rgba(0, 0, 0, 0.45);
+            -moz-box-shadow: -1px -4px 5px -1px rgba(0, 0, 0, 0.45);
+        }
+
+        .bottom_nav > ul {
+            width: 100%;
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .bottom_nav > ul > li {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .bottom_nav > ul > li > a:hover {
+            color: #FF324D;
+        }
+
+        /*sort by section*/
+        .sort_by_section {
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            z-index: 99999;
+            bottom: -3000px;
+            box-sizing: border-box;
+            box-shadow: -1px -4px 5px -1px rgba(0, 0, 0, 0.45);
+            -webkit-box-shadow: -1px -4px 5px -1px rgba(0, 0, 0, 0.45);
+            -moz-box-shadow: -1px -4px 5px -1px rgba(0, 0, 0, 0.45);
+        }
+
+        .sort_by_section.show {
+            bottom: 0px;
+            animation-name: fade-in-bottom;
+            animation-duration: 1s;
+        }
+
+        @keyframes fade-in-bottom {
+            from {
+                bottom: -350px;
+            }
+            to {
+                bottom: 0px;
+            }
+        }
+
+        .sort_by_section.hide {
+            bottom: -3000px;
+            animation-name: fade-out-bottom;
+            animation-duration: 1s;
+        }
+
+        @keyframes fade-out-bottom {
+            from {
+                bottom: 0px;
+            }
+            to {
+                bottom: -350px;
+            }
+        }
+
+        .sort_by_section > .header {
+            background-color: #1a1a1a;
+            padding: 7px 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #f0f0f0;
+        }
+
+        .sort_by_section > .header > button {
+            border-radius: 7px;
+        }
+
+        .sort_by_section > form > .body {
+            padding: 15px 7px;
+        }
+
+        .sort_by_section > form > .body > ul {
+            width: 100%;
+        }
+
+        .sort_by_section > form > .body > ul > li {
+            padding: 7px;
+        }
+
+        /*filter by section*/
+        .filter_by_section {
+            position: fixed;
+            width: 60%;
+            height: 100vh;
+            background-color: #fff;
+            z-index: 9999;
+            top: 0;
+            left: -3000px;
+            box-sizing: border-box;
+            box-shadow: 200px 0px 5px -1px rgba(0, 0, 0, 0.33);
+            -webkit-box-shadow: 200px 0px 5px -1px rgba(0, 0, 0, 0.33);
+            -moz-box-shadow: 200px 0px 5px -1px rgba(0, 0, 0, 0.33);
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .filter_by_section::-webkit-scrollbar {
+            display: none;
+        }
+
+        .filter_by_section.show {
+            left: 0px;
+            animation-name: fade-in-left;
+            animation-duration: 1s;
+        }
+
+        @keyframes fade-in-left {
+            from {
+                left: -150%;
+            }
+            to {
+                left: 0px;
+            }
+        }
+
+        .filter_by_section.hide {
+            left: -3000px;
+            animation-name: fade-out-left;
+            animation-duration: 1s;
+        }
+
+        @keyframes fade-out-left {
+            from {
+                left: 0px;
+            }
+            to {
+                left: -150%;
+            }
+        }
+
+        .filter_by_section > .header {
+            background-color: #1a1a1a;
+            padding: 7px 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #f0f0f0;
+        }
+
+        .filter_by_section > .header > button {
+            border-radius: 7px;
+        }
+
+        .filter_by_section > form > .body > .section_wrapper > h6 {
+            display: flex !important;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .filter_by_section > form > .body > .section_wrapper > h6 > .filter_expand_btn {
+            transform: rotate(180deg) !important;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .filter_by_section > form > .body > .section_wrapper > h6 .filter_expand_btn.hide {
+            transform: rotate(0deg) !important;
+            transition: 1s;
+        }
+
+        .filter_by_section > form > .body > .section_wrapper {
+            padding: 15px 10px;
+        }
+
+        .filter_by_section > form > .body > .section_wrapper > ul {
+            width: 100%;
+            padding: 0 0 10px 0;
+            border-bottom: 1px solid #b0b0b0;
+            display: block;
+            transition: 1s;
+        }
+        .filter_by_section > form > .body > .section_wrapper > ul.hide {
+            display: none;
+            transition: 1s;
+        }
+    </style>
 
 </head>
 
-<body>
-
-
-    <!-- LOADER -->
-    <!-- <div class="preloader">
-        <div class="lds-ellipsis">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div> -->
-    <!-- END LOADER -->
-    <!-- START HEADER -->
-    <header class="header_wrap fixed-top header_with_topbar">
-        <div class="top-header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <ul class="contact_detail text-center">
-                            <li></i><span>50% offer for New Products</span></li>
-                            <li><a href="" class="Shop">Shop Now</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom_header dark_skin main_menu_uppercase">
-            <div class="">
-                <nav class="navbar navbar-expand-lg"> 
+<body class="mobo_enable">
+<!-- LOADER -->
+<!-- <div class="preloader">
+    <div class="lds-ellipsis">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div> -->
+<!-- END LOADER -->
+<!-- START HEADER -->
+<header class="header_wrap fixed-top header_with_topbar">
+    <!--    <div class="top-header">-->
+    <!--        <div class="container">-->
+    <!--            <div class="row align-items-center">-->
+    <!--                <div class="col-12">-->
+    <!--                    <ul class="contact_detail text-center">-->
+    <!--                        <li></i><span>50% offer for New Products</span></li>-->
+    <!--                        <li><a href="" class="Shop">Shop Now</a></li>-->
+    <!--                    </ul>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="bottom_header dark_skin main_menu_uppercase">
+        <div class="">
+            <nav class="navbar navbar-expand-lg">
+                <div class="nav_wrapper">
                     <a class="navbar-brand" href="index.html">
                         <img class="" src="assets/images/Rectangle.png" alt="logo">
                         <span class="am-logo">AM FASHION</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false"> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-expanded="false">
                         <span class="ion-android-menu"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -99,30 +336,48 @@
                                             <h3 class="droph3">MEN -></h3>
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-4 ">
-                                                    <ul class="mega-ul"> 
+                                                    <ul class="mega-ul">
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class=" col-lg-4">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Jeans</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-col col-lg-4">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Accessories</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -131,21 +386,33 @@
                                             <h3 class="droph3">WOMEN</h3>
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-6">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class=" col-lg-6">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Jeans</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -154,12 +421,18 @@
                                             <h3 class="droph3">KIDS</h3>
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-2">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -169,30 +442,48 @@
                                         <li class="mega-menu-col col-lg-6">
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-4 ">
-                                                    <ul class="mega-ul"> 
+                                                    <ul class="mega-ul">
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class=" col-lg-4">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Jeans</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-col col-lg-4">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Accessories</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -200,21 +491,33 @@
                                         <li class="mega-menu-col col-lg-4">
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-6">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class=" col-lg-6">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Jeans</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -222,12 +525,18 @@
                                         <li class="mega-menu-col col-lg-2">
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-2">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -237,30 +546,48 @@
                                         <li class="mega-menu-col col-lg-6">
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-4 ">
-                                                    <ul class="mega-ul"> 
+                                                    <ul class="mega-ul">
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class=" col-lg-4">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Jeans</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-col col-lg-4">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Accessories</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -268,21 +595,33 @@
                                         <li class="mega-menu-col col-lg-4">
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-6">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class=" col-lg-6">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">Jeans</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -290,12 +629,18 @@
                                         <li class="mega-menu-col col-lg-2">
                                             <ul class="d-lg-flex">
                                                 <li class="col-lg-2">
-                                                    <ul> 
+                                                    <ul>
                                                         <li class="dropdown-header">T-Shirt</li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-list-right-sidebar.html">Regular T-shirt</a></li>
-                                                        <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list.html">Regular T-shirt</a></li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-left-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-list-right-sidebar.html">Regular T-shirt</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item nav-link nav_item"
+                                                               href="shop-left-sidebar.html">Regular T-shirt</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -305,20 +650,26 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="product_search_form">
                         <div class="form">
                             <i class="fa fa-search"></i>
-                            <input type="text" class="form-control form-input" placeholder="Search Product Titles or Tags">
+                            <input type="text" class="form-control form-input"
+                                   placeholder="Search Product Titles or Tags">
                         </div>
                     </div>
-                    <ul class="navbar-nav attr-nav align-items-center"  id="navbarSupportedContent">
-                        <li class="dropdown cart_dropdowns"><a href="cart_page.html" class="nav-link cart_trigger" data-bs-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+
+                    <ul class="navbar-nav attr-nav align-items-center" id="navbarSupportedContent">
+                        <li class="dropdown cart_dropdowns"><a href="cart_page.html" class="nav-link cart_trigger"
+                                                               data-bs-toggle="dropdown"><i
+                                class="linearicons-cart"></i><span class="cart_count">2</span></a>
                             <div class="cart_box dropdown-menu dropdown-menu-right">
                                 <ul class="cart_list" style="max-height: 600px !important">
-                                        <li>
-                                            <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                            <a href="#"><img src="assets/images/image 19.png" alt="cart_thumb2">Ornare sed consequat</a>
-                                            <span class="cart_quantity">Color: 
+                                    <li>
+                                        <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                        <a href="#"><img src="assets/images/image 19.png" alt="cart_thumb2">Ornare sed
+                                            consequat</a>
+                                        <span class="cart_quantity">Color:
                                             <span class="cart_amount">
                                                 <select name="" id="">
                                                     <option value="Green">Green</option>
@@ -326,7 +677,7 @@
                                                     <option value="Yellow">Yellow</option>
                                                 </select>
                                             </span></span>
-                                            <span class="cart_quantity">Size: 
+                                        <span class="cart_quantity">Size:
                                                 <span class="cart_amount">
                                                     <select name="" id="">
                                                         <option value="Green">L</option>
@@ -334,13 +685,15 @@
                                                         <option value="Yellow">XXL</option>
                                                     </select>
                                                 </span></span>
-                                            <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span class="price_symbole">$81.00</span></span></span>
-                                          
-                                        </li>
-                                        <li>
-                                            <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                            <a href="#"><img src="assets/images/image 22.png" alt="cart_thumb2">Ornare sed consequat</a>
-                                            <span class="cart_quantity">Color: 
+                                        <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span
+                                                class="price_symbole">$81.00</span></span></span>
+
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                        <a href="#"><img src="assets/images/image 22.png" alt="cart_thumb2">Ornare sed
+                                            consequat</a>
+                                        <span class="cart_quantity">Color:
                                             <span class="cart_amount">
                                                 <select name="" id="">
                                                     <option value="Green">Green</option>
@@ -348,7 +701,7 @@
                                                     <option value="Yellow">Yellow</option>
                                                 </select>
                                             </span></span>
-                                            <span class="cart_quantity">Size: 
+                                        <span class="cart_quantity">Size:
                                                 <span class="cart_amount">
                                                     <select name="" id="">
                                                         <option value="Green">L</option>
@@ -356,13 +709,16 @@
                                                         <option value="Yellow">XXL</option>
                                                     </select>
                                                 </span></span>
-                                            <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span class="price_symbole">$81.00</span></span></span>
-                                          
-                                        </li>
-                                        <li>
-                                            <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                            <a href="#"><img src="assets/images/image 8 (4).png" alt="cart_thumb2">Ornare sed consequat</a>
-                                            <span class="cart_quantity">Color: 
+                                        <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span
+                                                class="price_symbole">$81.00</span></span></span>
+
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                        <a href="#"><img src="assets/images/image 8 (4).png" alt="cart_thumb2">Ornare
+                                            sed
+                                            consequat</a>
+                                        <span class="cart_quantity">Color:
                                             <span class="cart_amount">
                                                 <select name="" id="">
                                                     <option value="Green">Green</option>
@@ -370,7 +726,7 @@
                                                     <option value="Yellow">Yellow</option>
                                                 </select>
                                             </span></span>
-                                            <span class="cart_quantity">Size: 
+                                        <span class="cart_quantity">Size:
                                                 <span class="cart_amount">
                                                     <select name="" id="">
                                                         <option value="Green">L</option>
@@ -378,46 +734,65 @@
                                                         <option value="Yellow">XXL</option>
                                                     </select>
                                                 </span></span>
-                                            <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span class="price_symbole">$81.00</span></span></span>
-                                        </li>
-                                        <h5 class="p-2">You May Also LIKE</h5>
-                                        <div class="col-md-12 p-2">
-                                            <div id="carouselExample" class="carousel slide">
-                                                <div class="carousel-inner">
-                                                  <div class="carousel-item active ">
+                                        <span class="cart_quantity">Unit Price:<span class="cart_amount"> <span
+                                                class="price_symbole">$81.00</span></span></span>
+                                    </li>
+                                    <h5 class="p-2">You May Also LIKE</h5>
+                                    <div class="col-md-12 p-2">
+                                        <div id="carouselExample" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active ">
                                                     <div class="col-12 row">
-                                                        <div class="col-4"><img src="/assets/images/image 8 (1).png" alt=""></div>
-                                                        <div class="col-4"><img src="/assets/images/image 8 (2).png" alt=""></div>
-                                                        <div class="col-4"><img src="/assets/images/image 8 (3).png" alt=""></div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (1).png"
+                                                                                alt="">
+                                                        </div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (2).png"
+                                                                                alt="">
+                                                        </div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (3).png"
+                                                                                alt="">
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <div class="col-12 row">
-                                                        <div class="col-4"><img src="/assets/images/image 8 (4).png" alt=""></div>
-                                                        <div class="col-4"><img src="/assets/images/image 8 (5).png" alt=""></div>
-                                                        <div class="col-4"><img src="/assets/images/image 8 (6).png" alt=""></div>
-                                                    </div>
-                                                  </div>                 
                                                 </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                                  <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                                                  <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                  <span class="visually-hidden">Next</span>
-                                                </button>
-                                              </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-12 row">
+                                                        <div class="col-4"><img src="/assets/images/image 8 (4).png"
+                                                                                alt="">
+                                                        </div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (5).png"
+                                                                                alt="">
+                                                        </div>
+                                                        <div class="col-4"><img src="/assets/images/image 8 (6).png"
+                                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
                                         </div>
-                                        <div class="cart_footer">
-                                            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
-                                            <p class="cart_buttons"><a href="#" class="btn btn-fill-line btn-radius view-cart">Checkout</a></p>
-                                        </div>
+                                    </div>
+                                    <div class="cart_footer">
+                                        <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span
+                                                class="price_symbole">$</span></span>159.00</p>
+                                        <p class="cart_buttons"><a href="#"
+                                                                   class="btn btn-fill-line btn-radius view-cart">Checkout</a>
+                                        </p>
+                                    </div>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="cart_page.html" class="nav-link mobile_cart"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+                            <a href="cart_page.html" class="nav-link mobile_cart"><i class="linearicons-cart"></i><span
+                                    class="cart_count">2</span></a>
                         </li>
                         <li>
                             <a href="#" class="nav-link"><i class="linearicons-user"></i><span class="log">Log
@@ -425,60 +800,109 @@
                         </li>
 
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
 <!-- START MAIN CONTENT -->
-<div class="main_content">
+<div class="main_content container-fluid">
 
-<!-- START SECTION SHOP -->
-<div class="section">
-	<div class="">
-    	<div class="row">
-			<div class="col-lg-9 col-sm-12">
-                <div class="search_product">
-                    <div class="form">
+    <!-- START SECTION SHOP -->
+    <div class="section">
+        <div class="row">
+            <div class="col-lg-10 col-md-12 body_content">
+                <!--                desktop version-->
+                <div class="col-12 d-lg-block d-none">
+                    <div class="form poppins-regular">
                         <i class="fa fa-search"></i>
                         <input type="text" class="form-control form-input"
-                            placeholder="Search Product Titles or Tags">
+                               placeholder="Search Product Titles or Tags">
                     </div>
                 </div>
-            	<div class="row align-items-center mb-4 pb-1">
-                    <div class="col-12">
-                        <div class="product_header">
-                            <div class="product_header_left">
-                                <ol class="breadcrumb justify-content-md-end">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="breadcrumb-item active">Shop List Left Sidebar</li>
-                                </ol>
-                              
-                            </div>
+                <div class="col-12 d-lg-block mb-2 d-none">
+                    <div class="product_header poppins-regular font-14px">
+                        <div class="product_header_left">
+                            <ol class="breadcrumb justify-content-md-end">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                <li class="breadcrumb-item poppins-extrabold">Shop List Left Sidebar</li>
+                            </ol>
 
-                            <div class="product_header_right">
-                                <!-- <div class="products_view">
-                                    <a href="javascript:void(0);" class="shorting_icon grid active"><i
-                                            class="ti-view-grid"></i></a>
-                                    <a href="javascript:void(0);" class="shorting_icon list"><i
-                                            class="ti-layout-list-thumb"></i></a>
-                                </div> -->
-                                <div class="custom_select">
-                                    <select class="form-control form-control-sm">
-                                        <option value="order">Sort by</option>
-                                        <option value="popularity"> popularity</option>
-                                        <option value="date">Sort by newness</option>
-                                        <option value="price">Sort by price: low to high</option>
-                                        <option value="price-desc">Sort by price: high to low</option>
-                                    </select>
-                                </div>
+                        </div>
+
+                        <div class="product_header_right">
+                            <!-- <div class="products_view">
+                                <a href="javascript:void(0);" class="shorting_icon grid active"><i
+                                        class="ti-view-grid"></i></a>
+                                <a href="javascript:void(0);" class="shorting_icon list"><i
+                                        class="ti-layout-list-thumb"></i></a>
+                            </div> -->
+                            <div class="custom_select">
+                                <select class="form-control form-control-sm">
+                                    <option value="order">Sort by</option>
+                                    <option value="popularity"> popularity</option>
+                                    <option value="date">Sort by newness</option>
+                                    <option value="price">Sort by price: low to high</option>
+                                    <option value="price-desc">Sort by price: high to low</option>
+                                </select>
                             </div>
                         </div>
                     </div>
-                </div> 
-                <div class="row shop_container grid">
-                    <div class="col-md-3 col-6">
+                </div>
+
+                <!--                mobile version-->
+                <div class="col-12 d-lg-none p-0">
+                    <div class="product_header poppins-regular font-14px">
+                        <div class="product_header_left">
+                            <ol class="breadcrumb justify-content-md-end">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                <li class="breadcrumb-item poppins-extrabold">Shop List Left Sidebar</li>
+                            </ol>
+
+                        </div>
+
+                        <div class="product_header_right">
+                            <!-- <div class="products_view">
+                                <a href="javascript:void(0);" class="shorting_icon grid active"><i
+                                        class="ti-view-grid"></i></a>
+                                <a href="javascript:void(0);" class="shorting_icon list"><i
+                                        class="ti-layout-list-thumb"></i></a>
+                            </div> -->
+                            <div class="custom_select">
+                                <select class="form-control form-control-sm">
+                                    <option value="order">Sort by</option>
+                                    <option value="popularity"> popularity</option>
+                                    <option value="date">Sort by newness</option>
+                                    <option value="price">Sort by price: low to high</option>
+                                    <option value="price-desc">Sort by price: high to low</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none p-0">
+                    <div class="form poppins-regular">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control form-input"
+                               placeholder="Search Product Titles or Tags">
+                    </div>
+                </div>
+
+                <div class="row fa-fa d-lg-none poppins-semibold p-0">
+                    <div class="col-6 text-center filter_mo_btn mo_btn_l sort_by_btn"><i
+                            class="fas fa-sort-amount-down-alt"></i> Sort By
+                    </div>
+                    <div class="col-6 text-center filter_mo_btn mo_btn_r filter_by_btn"><i class="fas fa-filter"></i> Filter
+                        By
+                    </div>
+                </div>
+
+
+                <div class="row poppins-regular p-0 pt-3"> <!--shop_container grid-->
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -486,15 +910,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -509,7 +937,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -517,15 +945,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -540,7 +972,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -548,15 +980,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -571,7 +1007,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -579,15 +1015,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -602,7 +1042,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -610,15 +1050,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -633,7 +1077,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -641,15 +1085,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -664,7 +1112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -672,15 +1120,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -695,7 +1147,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -703,15 +1155,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -726,7 +1182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -734,15 +1190,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -757,7 +1217,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -765,15 +1225,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -788,7 +1252,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -796,15 +1260,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -819,7 +1287,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
+                    <div class="col-lg-3 col-6">
                         <div class="product">
                             <div class="product_img">
                                 <a href="shop-product-detail.html">
@@ -827,15 +1295,19 @@
                                 </a>
                                 <div class="product_action_box">
                                     <ul class="list_none pr_action_btn">
-                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-                                        <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add
+                                            To Cart</a></li>
+                                        <li><a href="shop-compare.html" class="popup-ajax"><i
+                                                class="icon-shuffle"></i></a></li>
+                                        <li><a href="shop-quick-view.html" class="popup-ajax"><i
+                                                class="icon-magnifier-add"></i></a></li>
                                         <li><a href="#"><i class="icon-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily Use</a></h6>
+                                <h6 class="product_title"><a href="shop-product-detail.html">Mens Panjabi for Daily
+                                    Use</a></h6>
                                 <div class="product_price">
                                     <del>$5005.25</del>
                                     <span class="price">$4005.00</span>
@@ -851,273 +1323,441 @@
                         </div>
                     </div>
                 </div>
-        		<div class="row">
+                <div class="row poppins-regular">
                     <div class="col-12">
                         <ul class="pagination mt-3 justify-content-center pagination_style1">
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="linearicons-arrow-right"></i></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i
+                                    class="linearicons-arrow-right"></i></a></li>
                         </ul>
                     </div>
                 </div>
-        	</div>
-            <div class="col-lg-3 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0 sidebarml">
-            	<div class="sidebar container">
-                	<div class="widget">
-                    	<h5 class="widget_title">Collection</h5>	
-                        <ul class="list_brand">
+            </div>
+
+
+            <div class="col-lg-2 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0 sidebarml">
+                <div class="sidebar container filter_sidebar">
+                    <div class="widget">
+                        <h6 class="widget_title poppins-semibold">Collection</h6>
+                        <ul class="list_brand poppins-regular font-14px">
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Arrivals" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Arrivals"
+                                           value="">
                                     <label class="form-check-label" for="Arrivals"><span>Accessories</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Lighting" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Lighting"
+                                           value="">
                                     <label class="form-check-label" for="Lighting"><span>Shirts</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Tables" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Tables"
+                                           value="">
                                     <label class="form-check-label" for="Tables"><span>Sports</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Chairs" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Chairs"
+                                           value="">
                                     <label class="form-check-label" for="Chairs"><span>Chino Pants</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories"
+                                           value="">
                                     <label class="form-check-label" for="Accessories"><span>Panjabi</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories"
+                                           value="">
                                     <label class="form-check-label" for="Accessories"><span>Jeans</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories" value="">
-                                    <label class="form-check-label" for="Accessories"><span>Sunglasses</span></label>
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories"
+                                           value="">
+                                    <label class="form-check-label"
+                                           for="Accessories"><span>Sunglasses</span></label>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="widget">
-                    	<h5 class="widget_title">Size</h5>	
-                        <ul class="list_brand">
+                        <h6 class="widget_title poppins-semibold">Size</h6>
+                        <ul class="list_brand poppins-regular font-14px">
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Arrivals" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Arrivals"
+                                           value="">
                                     <label class="form-check-label" for="Arrivals"><span>S</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Lighting" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Lighting"
+                                           value="">
                                     <label class="form-check-label" for="Lighting"><span>M</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Tables" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Tables"
+                                           value="">
                                     <label class="form-check-label" for="Tables"><span>L</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Chairs" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Chairs"
+                                           value="">
                                     <label class="form-check-label" for="Chairs"><span>XL</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories"
+                                           value="">
                                     <label class="form-check-label" for="Accessories"><span>XXL</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories"
+                                           value="">
                                     <label class="form-check-label" for="Accessories"><span>XXXL</span></label>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="widget">
-                    	<h5 class="widget_title">Color</h5>	
-                        <ul class="list_brand">
+                        <h6 class="widget_title poppins-semibold">Color</h6>
+                        <ul class="list_brand poppins-regular font-14px">
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Arrivals" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Arrivals"
+                                           value="">
                                     <label class="form-check-label" for="Arrivals"><span>Red</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Lighting" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Lighting"
+                                           value="">
                                     <label class="form-check-label" for="Lighting"><span>White</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Tables" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Tables"
+                                           value="">
                                     <label class="form-check-label" for="Tables"><span>Blue</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Chairs" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Chairs"
+                                           value="">
                                     <label class="form-check-label" for="Chairs"><span>Green</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories"
+                                           value="">
                                     <label class="form-check-label" for="Accessories"><span>Pink</span></label>
                                 </div>
                             </li>
                             <li>
                                 <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories" value="">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Accessories"
+                                           value="">
                                     <label class="form-check-label" for="Accessories"><span>Black</span></label>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="widget">
-                    	<h5 class="widget_title">Filter</h5>
+                        <h6 class="widget_title poppins-semibold">Filter</h6>
                         <div class="filter_price">
-                             <div id="price_filter" data-min="0" data-max="500" data-min-value="50" data-max-value="300" data-price-sign="$"></div>
-                             <div class="price_range">
-                                 <span>Price: <span id="flt_price"></span></span>
-                                 <input type="hidden" id="price_first">
-                                 <input type="hidden" id="price_second">
-                             </div>
-                         </div>
+                            <div id="price_filter" data-min="0" data-max="500" data-min-value="50"
+                                 data-max-value="300" data-price-sign="$"></div>
+                            <div class="price_range">
+                                <span>Price: <span id="flt_price"></span></span>
+                                <input type="hidden" id="price_first">
+                                <input type="hidden" id="price_second">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- END SECTION SHOP -->
+    <!-- END SECTION SHOP -->
 </div>
 <!-- END MAIN CONTENT -->
 
-    <!-- START FOOTER -->
-    <footer class="footer_dark">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-1 col-md-6 col-sm-6">
-                        <div class="footer_logo">
-                            <a href="#"><img src="assets/images/Logo (1).png" alt="logo" /></a>
-                        </div>
+<!-- START FOOTER -->
+<footer class="footer_dark">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-6 col-sm-6">
+                    <div class="footer_logo">
+                        <a href="#"><img src="assets/images/Logo (1).png" alt="logo"/></a>
                     </div>
-                    <div class="col-lg-5 col-md-6 col-sm-12">
-                        <div class="widget">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit debitis odit
-                                saepe error ex architecto, laborum laudantium nisi voluptates exercitationem ullam
-                                deserunt aliquid minus enim, reiciendis, adipisci et quidem. If you are going to use of
-                                Lorem Ipsum need to be sure there isn't hidden of text</p>
-                        </div>
-                        <div class="widget">
-                            <ul class="social_icons social_white">
-                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                                <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="widget">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit debitis odit
+                            saepe error ex architecto, laborum laudantium nisi voluptates exercitationem ullam
+                            deserunt aliquid minus enim, reiciendis, adipisci et quidem. If you are going to use of
+                            Lorem Ipsum need to be sure there isn't hidden of text</p>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="widget">
-                            <h6 class="widget_title">Useful Links</h6>
-                            <ul class="widget_links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Location</a></li>
-                                <li><a href="#">Affiliates</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                    <div class="widget">
+                        <ul class="social_icons social_white">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                            <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="widget">
-                            <h6 class="widget_title">Category</h6>
-                            <ul class="widget_links">
-                                <li><a href="#">Men</a></li>
-                                <li><a href="#">Woman</a></li>
-                                <li><a href="#">Kids</a></li>
-                                <li><a href="#">Best Saller</a></li>
-                                <li><a href="#">New Arrivals</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h6 class="widget_title">Useful Links</h6>
+                        <ul class="widget_links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="widget">
-                            <h6 class="widget_title">Contact Info</h6>
-                            <ul class="contact_info contact_info_light">
-                                <li>
-                                    <i class="ti-location-pin"></i>
-                                    <p>123 Street, Old Trafford, New South London , UK</p>
-                                </li>
-                                <li>
-                                    <i class="ti-email"></i>
-                                    <a href="mailto:info@sitename.com">info@sitename.com</a>
-                                </li>
-                                <li>
-                                    <i class="ti-mobile"></i>
-                                    <p>+ 457 789 789 65</p>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h6 class="widget_title">Category</h6>
+                        <ul class="widget_links">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Best Saller</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="widget">
+                        <h6 class="widget_title">Contact Info</h6>
+                        <ul class="contact_info contact_info_light">
+                            <li>
+                                <i class="ti-location-pin"></i>
+                                <p>123 Street, Old Trafford, New South London , UK</p>
+                            </li>
+                            <li>
+                                <i class="ti-email"></i>
+                                <a href="mailto:info@sitename.com">info@sitename.com</a>
+                            </li>
+                            <li>
+                                <i class="ti-mobile"></i>
+                                <p>+ 457 789 789 65</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom_footer border-top-tran">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="mb-md-0 text-center">Copyright © 2024 AM FASHION Limited. All Right Reserved</p>
-                    </div>
+    </div>
+    <div class="bottom_footer border-top-tran">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mb-md-0 text-center">Copyright © 2024 AM FASHION Limited. All Right Reserved</p>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- END FOOTER -->
-    <!-- Latest jQuery --> 
-<script src="assets/js/jquery-3.6.0.min.js"></script> 
-<!-- jquery-ui --> 
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+<!--bottom_nav -->
+<div class="bottom_nav d-lg-none d-block">
+    <ul>
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-th-large"></i> Categories</a></li>
+        <li><a href="#"><i class="far fa-user"></i> Account</a></li>
+    </ul>
+</div>
+<!--end bottom_nav-->
+
+<!--sort by-->
+<div class="sort_by_section d-lg-none d-block">
+    <div class="header">
+        <span>Sort By</span>
+        <button type="button" class="btn-light sort_by_section_close"><i class="fas fa-times"></i></button>
+    </div>
+    <form action="">
+        <div class="body">
+            <ul>
+                <li>
+                    <div class="custome-checkbox">
+                        <input class="form-check-input" type="checkbox" name="sort_by[]" id="sort_box_1"
+                               value="">
+                        <label class="form-check-label" for="sort_box_1"><span>Featured</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="custome-checkbox">
+                        <input class="form-check-input" type="checkbox" name="sort_by[]" id="sort_box_2"
+                               value="">
+                        <label class="form-check-label" for="sort_box_2"><span>Price Low to High</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="custome-checkbox">
+                        <input class="form-check-input" type="checkbox" name="sort_by[]" id="sort_box_3"
+                               value="">
+                        <label class="form-check-label" for="sort_box_3"><span>rice High to Low</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="custome-checkbox">
+                        <input class="form-check-input" type="checkbox" name="sort_by[]" id="sort_box_4"
+                               value="">
+                        <label class="form-check-label" for="sort_box_4"><span>Newest</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="custome-checkbox">
+                        <input class="form-check-input" type="checkbox" name="sort_by[]" id="sort_box_5"
+                               value="">
+                        <label class="form-check-label" for="sort_box_5"><span>Best Selling</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="custome-checkbox">
+                        <input class="form-check-input" type="checkbox" name="sort_by[]" id="sort_box_6"
+                               value="">
+                        <label class="form-check-label" for="sort_box_6"><span>A-Z</span></label>
+                    </div>
+                </li>
+                <li>
+                    <div class="custome-checkbox">
+                        <input class="form-check-input" type="checkbox" name="sort_by[]" id="sort_box_7"
+                               value="">
+                        <label class="form-check-label" for="sort_box_7"><span>Z-A</span></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>
+<!--end sort by-->
+
+<!--filter by section-->
+<div class="filter_by_section d-lg-none d-block">
+    <div class="header">
+        <span>Filter By</span>
+        <button type="button" class="btn-light filter_by_section_close"><i class="fas fa-times"></i></button>
+    </div>
+    <form action="">
+        <div class="body">
+            <div class="section_wrapper">
+                <h6 class="poppins-semibold"><span>Collection</span> <i class="fas fa-chevron-down filter_expand_btn"></i></h6>
+                <ul class="poppins-regular font-14px">
+                    <li>
+                        <div class="custome-checkbox">
+                            <input class="form-check-input" type="checkbox" name="collection[]" id="accessories_mob"
+                                   value="">
+                            <label class="form-check-label" for="accessories_mob"><span>Accessories</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custome-checkbox">
+                            <input class="form-check-input" type="checkbox" name="collection[]" id="shirts_mob"
+                                   value="">
+                            <label class="form-check-label" for="shirts_mob"><span>Shirts</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custome-checkbox">
+                            <input class="form-check-input" type="checkbox" name="collection[]" id="sports_mob"
+                                   value="">
+                            <label class="form-check-label" for="sports_mob"><span>Sports</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custome-checkbox">
+                            <input class="form-check-input" type="checkbox" name="collection[]" id="chino_pants_mob"
+                                   value="">
+                            <label class="form-check-label" for="chino_pants_mob"><span>Chino Pants</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custome-checkbox">
+                            <input class="form-check-input" type="checkbox" name="collection[]" id="panjabi_mob"
+                                   value="">
+                            <label class="form-check-label" for="panjabi_mob"><span>Panjabi</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custome-checkbox">
+                            <input class="form-check-input" type="checkbox" name="collection[]" id="jeans_mob"
+                                   value="">
+                            <label class="form-check-label" for="jeans_mob"><span>Jeans</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custome-checkbox">
+                            <input class="form-check-input" type="checkbox" name="collection[]" id="sunglasses_mob"
+                                   value="">
+                            <label class="form-check-label"
+                                   for="sunglasses_mob"><span>Sunglasses</span></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+<!--end filter by section-->
+
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<!-- jquery-ui -->
 <script src="assets/js/jquery-ui.js"></script>
+<!-- icon -->
+<script src="assets/fontawesome-free-5.15.4-web/js/all.min.js"></script>
 <!-- popper min js -->
 <script src="assets/js/popper.min.js"></script>
-<!-- Latest compiled and minified Bootstrap --> 
-<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
-<!-- owl-carousel min js  --> 
-<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
-<!-- magnific-popup min js  --> 
-<script src="assets/js/magnific-popup.min.js"></script> 
-<!-- waypoints min js  --> 
-<script src="assets/js/waypoints.min.js"></script> 
-<!-- parallax js  --> 
-<script src="assets/js/parallax.js"></script> 
-<!-- countdown js  --> 
-<script src="assets/js/jquery.countdown.min.js"></script> 
-<!-- imagesloaded js --> 
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup min js  -->
+<script src="assets/js/magnific-popup.min.js"></script>
+<!-- waypoints min js  -->
+<script src="assets/js/waypoints.min.js"></script>
+<!-- parallax js  -->
+<script src="assets/js/parallax.js"></script>
+<!-- countdown js  -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- imagesloaded js -->
 <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<!-- isotope min js --> 
+<!-- isotope min js -->
 <script src="assets/js/isotope.min.js"></script>
 <!-- jquery.dd.min js -->
 <script src="assets/js/jquery.dd.min.js"></script>
@@ -1125,7 +1765,34 @@
 <script src="assets/js/slick.min.js"></script>
 <!-- elevatezoom js -->
 <script src="assets/js/jquery.elevatezoom.js"></script>
-<!-- scripts js --> 
+<!-- scripts js -->
 <script src="assets/js/scripts.js"></script>
+
+
+<script>
+
+
+    document.querySelector(".sort_by_btn").addEventListener("click", () => {
+        document.querySelector(".sort_by_section").classList.remove("hide");
+        document.querySelector(".sort_by_section").classList.add("show");
+        document.querySelector(".sort_by_section_close").addEventListener("click", () => {
+            document.querySelector(".sort_by_section").classList.remove("show");
+            document.querySelector(".sort_by_section").classList.add("hide");
+        })
+    });
+
+    document.querySelector(".filter_by_btn").addEventListener("click", () => {
+        document.querySelector(".filter_by_section").classList.remove("hide");
+        document.querySelector(".filter_by_section").classList.add("show");
+        document.querySelector(".filter_by_section_close").addEventListener("click", () => {
+            document.querySelector(".filter_by_section").classList.remove("show");
+            document.querySelector(".filter_by_section").classList.add("hide");
+        })
+    })
+
+    // const filter_drop_down = () => {
+    //     do
+    // }
+</script>
 </body>
 </html>
