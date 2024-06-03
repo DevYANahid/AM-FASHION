@@ -1944,15 +1944,13 @@ heading_s11>span>img{
 	margin-bottom: 15px;
 }
 .hrs{
-	border: 3px solid rgb(255, 20, 20);
-	width: 3%;
-	align-items: center;
-	margin-left: 48%;
+	border: 2px solid rgb(255, 20, 20);
+	width: 50px;
+	margin: 0 auto;
     margin-bottom: 25px;
 }
 .custom_container_about{
-	padding-right: 20%;
-	padding-left: 20%;
+	padding: 0 15px;
 }
 
 /* search start */
@@ -4379,10 +4377,13 @@ footer {
 	padding: 100px 0 70px;
 }
 .footer_logo {
-	margin-top: 20px;
+	margin: 20px 0;
+}
+.footer_logo img {
+	width: 65px;
 }
 footer p {
-	font-size: 14px;
+	font-size: 11px;
 }
 footer .widget {
 	margin-bottom: 30px;
