@@ -1953,6 +1953,15 @@ heading_s11>span>img{
 	padding: 0 15px;
 }
 
+@media (min-width:1025px) {
+	.custom_container_about {
+		width: 1025px;
+		margin: 0 auto;
+		line-height: normal;
+		padding: unset;
+	}
+}
+
 /* search start */
 .form{
 
@@ -4370,11 +4379,11 @@ footer {
 	overflow: hidden;
 }
 .footer_dark {
-	background-color: #202325;
+	background-color: #37383f;
 	position: relative;
 }
 .footer_top {
-	padding: 100px 0 70px;
+	padding: 50px 0 10px;
 }
 .footer_logo {
 	margin: 20px 0;
@@ -4385,8 +4394,21 @@ footer {
 footer p {
 	font-size: 11px;
 }
+
+@media (min-width: 1025px) {
+	footer p {
+		font-size: 14px;
+	}
+	.footer_top_container {
+		width: 90% !important;
+		margin: 0 auto;
+	}
+}
 footer .widget {
 	margin-bottom: 30px;
+}
+footer .widget.w355px {
+	width: 355px;
 }
 footer .widget_title {
 	text-transform: capitalize;
